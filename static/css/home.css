@@ -1,0 +1,64 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* 
+MAIN COLOR: #69DB7C
+TEXT COLOR: #212529
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #212529;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  font-size: 18px;
+}
+
+/* Decorating the Top-Nav | Flex-Box */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px;
+  background-color: #69db7c;
+}
+
+/* Decorating Links LVHA */
+
+a:link {
+  color: #212529;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #212529;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+/* LVHA */
