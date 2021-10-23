@@ -1,6 +1,62 @@
-
 {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
     <link rel="stylesheet" href="static/css/home.css" />
-    <div> Hello World! </div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-header">
+        <h1 class="h-header">🔎cFinder</h1>
+        <nav>
+          <a href="/">Home</a>| <a href="/about-us">About Us</a>|
+          <a href="/toolbox">Toolbox</a> |
+          <a href="/finder">cFinder</a>
+        </nav>
+      </header>
 
+      <div class="grid-1-cols">
+        <span class="hello"> Welcome to cFinder! </span>
+      </div>
+
+      <div class="grid-2-cols">
+        <p class="pstatement">
+          &emsp;&nbsp; What is cFinder and who &emsp;&nbsp; is it for?
+        </p>
+        <p class="explanation">
+          &emsp;&emsp;&ensp;cFinder was made to solve a big question all
+          engineering students ask when they first get to Discovery Park.
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Where is my Class!?
+        </p>
+
+        <div class="grid-lost">
+          <img
+            src="../static/images/feel-lost.jpeg"
+            alt="man looking through the woods"
+            class="lost"
+          />
+        </div>
+        <div class="testimonial-lost">
+          <h2>Lost in the woods</h2>
+          <p class="testimonial-text">
+            Students first time in Discovery Park can feel like being lost in
+            the woods. The hallways and classrooms seem to blend together. You
+            try looking for maps online but no luck at all. With cFinder, we
+            make finding your classes a quick and easy process.
+          </p>
+          <a href="/finder">
+            <button class="testimonial-btn">Get Started!</button>
+          </a>
+        </div>
+
+        <div class="end"></div>
+      </div>
+    </div>
+  </body>
+</html>
 {% endblock %}
