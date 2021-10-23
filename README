@@ -1,1 +1,37 @@
-hello world
+----------------------------------------
+Welcome to cFinder, an intuitive class 
+finder for locating your classes.
+
+cFinder is a website devoloped to help
+students find there way around and more
+easily adapt their new lifestyle.
+
+The website will ask the user to type
+in their class number and will pinpoint
+them to the correct class using the UNT
+Discover Park map
+----------------------------------------
+Team:
+Edwin Hernandez
+Xavier Moreno
+Malcolm Morton
+Sean Gerideau
+
+----------------------------------------
+Installations:
+Use the package manager pip3 to install 
+the following dependencies:
+
+*Flask
+*psudo pip3 install flask
+----------------------------------------
+Usage:
+To use call the following:
+
+*from flask import Flask, render_template, url_for
+*from flask_sqlalchemy import SQLAlchemy
+----------------------------------------
+To Run:
+
+export FLASK_APP=main.py
+flask run --host=0.0.0.0
