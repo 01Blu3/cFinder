@@ -18,7 +18,9 @@ TEXT COLOR: #212529
 }
 
 body {
+  font-family: "Inter", sans-serif;
   color: #212529;
+  border-top: 15px solid #212529;
 }
 
 .container {
@@ -28,16 +30,22 @@ body {
 
 nav {
   font-size: 18px;
+  margin-right: 30px;
 }
 
 /* Decorating the Top-Nav | Flex-Box */
+.h-header {
+  margin-left: 15px;
+}
+
 .main-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  padding: 10px;
+  padding: 7px;
   background-color: #69db7c;
+  letter-spacing: 0.2em;
 }
 
 /* Decorating Links LVHA */
@@ -52,13 +60,114 @@ a:visited {
 }
 
 a:hover {
-  color: orangered;
   font-weight: bold;
-  text-decoration: underline orangered;
+  text-decoration: underline;
 }
 
 a:active {
-  background-color: black;
+  color: #f03e3e;
   font-style: italic;
 }
 /* LVHA */
+
+/* Landing Page Background */
+.grid-1-cols {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(147, 162, 236, 0.52),
+      rgba(12, 51, 56, 0.73)
+    ),
+    url("../images/dPark.JPG");
+  width: 1200px;
+  height: 600px;
+  color: white;
+}
+
+.hello {
+  font-size: 36px;
+  font-weight: 500;
+  margin-left: 80px;
+  font-style: italic;
+  margin-top: 210px;
+  text-decoration: underline;
+
+  display: inline-block;
+}
+
+/* Creating a Gridbox for the problem and solution */
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr, 1fr, 1fr;
+  column-gap: 80px;
+  height: 200px;
+}
+
+.pstatement {
+  font-size: 30px;
+  margin: auto 150px;
+  word-spacing: 8px;
+}
+
+.explanation {
+  font-size: 20px;
+  margin: auto;
+  letter-spacing: 0.1em;
+  word-spacing: 12px;
+  line-height: 24px;
+}
+
+/* Feeling like being lost */
+.lost {
+  max-width: 100%;
+  height: auto;
+}
+
+.testimonial-lost h2 {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 24px;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.testimonial-text {
+  margin: 0 50px;
+  font-size: 20px;
+  line-height: 1.7em;
+  word-spacing: 8px;
+}
+
+.testimonial-lost {
+  background-color: #69db7c;
+  margin-left: -80px;
+}
+
+.testimonial-btn {
+  margin-left: 350px;
+  font-size: 24px;
+}
+
+button {
+  background-color: #212529;
+  border: none;
+  color: #fa5252;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.end {
+  grid-column: span 2;
+  margin-top: 100px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  color: white;
+}
