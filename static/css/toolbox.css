@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(121, 212, 103);
+}
+
+nav {
+  font-size: 18px;
+  margin-right: 30px;
+}
+
+/* Decorating the Top-Nav | Flex-Box */
+.h-header {
+  margin-left: 15px;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 7px;
+  background-color: #69db7c;
+  letter-spacing: 0.2em;
+}
+
+/* Decorating Links LVHA */
+
+a:link {
+  color: #212529;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #212529;
+}
+
+a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #f03e3e;
+  font-style: italic;
+}
+
+/* Beautifying the list */
+.tech-overview {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr;
+  gap: 10px;
+
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
